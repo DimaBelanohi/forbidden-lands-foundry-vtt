@@ -5,6 +5,7 @@
             <div class="header armor">
                 <b class="name">{{localize "GEAR.NAME"}}</b>
                 <b class="bonus">{{localize "GEAR.BONUS"}}</b>
+                <b class="bonus"></b>
             </div>
             <div class="items">
                 {{#each actor.items as |item|}}
@@ -22,7 +23,7 @@
                         {{item.data.bonus.value}}
                     </div>
                     <div class="button">
-                        <a class="item-control item-damage" title="Damage"><i class="fas fa-bahai"></i></a>
+                        <a class="item-control item-damage" title="Damage">DAMAGE</a>
                     </div>
                 </div>
                 {{/if}}
@@ -38,6 +39,7 @@
                 <b class="damage">{{localize "WEAPON.DAMAGE"}}</b>
                 <b class="range">{{localize "WEAPON.RANGE"}}</b>
                 <b class="bonus">{{localize "WEAPON.BONUS"}}</b>
+                <b class="bonus"></b>
             </div>
             <div class="items">
                 {{#each actor.items as |item|}}
@@ -61,7 +63,7 @@
                             {{#if item.data.artifactBonus}}+ {{item.data.artifactBonus}}{{/if}}
                         </div>
                         <div class="button">
-                            <a class="item-control item-damage" title="Damage"><i class="fas fa-bahai"></i></a>
+                            <a class="item-control item-damage" title="Damage">DAMAGE</a>
                         </div>
                     </div>
                 </div>
