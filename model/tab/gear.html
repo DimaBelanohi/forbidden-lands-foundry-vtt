@@ -33,7 +33,7 @@
                         <div class="name">{{item.name}}</div>
                     </div>
                     <div class="bonus {{isBroken item}}">
-                        {{item.data.bonus.value}}
+                        {{item.data.bonus.value}}/{{item.data.bonus.max}}
                     </div>
                     <div class="weight">{{itemWeight item.data.weight}}</div>
                     <div class="button">
@@ -62,7 +62,7 @@
                         <div class="name">{{item.name}}</div>
                     </div>
                     <div class="bonus {{isBroken item}}">
-                        {{item.data.bonus.value}}
+                        {{item.data.bonus.value}}/{{item.data.bonus.max}}
                         {{#if item.data.artifactBonus}}+ {{item.data.artifactBonus}}{{/if}}
                     </div>
                     <div class="weight">{{itemWeight item.data.weight}}</div>
@@ -92,7 +92,7 @@
                         <div class="name">{{item.name}}</div>
                     </div>
                     <div class="bonus {{isBroken item}}">
-                        {{item.data.bonus.value}}
+                        {{item.data.bonus.value}}/{{item.data.bonus.max}}
                     </div>
                     <div class="weight">{{itemWeight item.data.weight}}</div>
                     <div class="button">
