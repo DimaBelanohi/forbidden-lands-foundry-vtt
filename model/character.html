@@ -19,13 +19,13 @@
                             <label>{{localize data.bio.profession.label}}:</label>
                             <input name="data.bio.profession.value" type="text" value="{{data.bio.profession.value}}" />
                         </div>
-                    </div>
-                    <div class="bio-row">
                         <div class="age">
                             <label>{{localize data.bio.age.label}}:</label>
                             <input name="data.bio.age.value" type="number" value="{{data.bio.age.value}}"
                                 data-dtype="Number" />
                         </div>
+                    </div>
+                    <div class="bio-row">                        
                         <div class="reputation">
                             <label>{{localize data.bio.reputation.label}}:</label>
                             <input name="data.bio.reputation.value" type="number" value="{{data.bio.reputation.value}}"
@@ -45,7 +45,28 @@
                 </div>
             </div>
         </div>
-
+        <div class="main-tab">
+            <div class="attributes border">
+                <h1>{{localize "ATTRIBUTES"}}</h1>
+                {{#each data.attribute as |attribute key|}}
+                <div class="name">
+                    <button class="roll-attribute" data-attribute="{{key}}">{{localize attribute.label}}</button>
+                </div>
+                <div class="skulls {{#unless attribute.value }}broken{{/unless}}">
+                    <a class="change-attribute" data-attribute="{{key}}">
+                        {{#skulls attribute.value attribute.max}}
+                        <i class="skull far {{#if @damaged}}fa-times-circle{{else}}fa-circle{{/if}}"></i>
+                        {{/skulls}}
+                    </a>
+                </div>
+                <div class="value">
+                    <input name="data.attribute.{{key}}.value" type="number" value="{{attribute.value}}" data-dtype="Number" />
+                    /
+                    <input name="data.attribute.{{key}}.max" type="number" value="{{attribute.max}}" data-dtype="Number" />
+                </div>
+                {{/each}}
+            </div>
+        </div>
         <div class="sheet-tabs tabs flex row" data-group="primary">
             <b class="item" data-tab="main">{{localize "TAB.MAIN"}}</b>
             <b class="item" data-tab="combat">{{localize "TAB.COMBAT"}}</b>

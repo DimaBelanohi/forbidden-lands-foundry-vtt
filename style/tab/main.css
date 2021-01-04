@@ -5,6 +5,12 @@
   height: 100%;
 }
 
+.forbidden-lands .attributes- {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 1fr;
+  }
+
 .forbidden-lands .attributes {
   align-items: baseline;
   display: grid;
