@@ -14,6 +14,7 @@ function preloadHandlebarsTemplates() {
     "systems/forbidden-lands/model/talent.html",
     "systems/forbidden-lands/model/critical-injury.html",
     "systems/forbidden-lands/model/tab/main.html",
+    "systems/forbidden-lands/model/tab/main-monster.html",
     "systems/forbidden-lands/model/tab/combat.html",
     "systems/forbidden-lands/model/tab/combat-monster.html",
     "systems/forbidden-lands/model/tab/talent.html",

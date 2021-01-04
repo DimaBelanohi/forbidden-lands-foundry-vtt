@@ -14,7 +14,7 @@ export class ForbiddenLandsMonsterSheet extends ForbiddenLandsActorSheet {
         {
           navSelector: ".sheet-tabs",
           contentSelector: ".sheet-body",
-          initial: "main-monster",
+          initial: "main",
         },
       ],
     });
