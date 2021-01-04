@@ -7,7 +7,7 @@ export class ForbiddenLandsCharacterSheet extends ForbiddenLandsActorSheet {
       classes: ["forbidden-lands", "sheet", "actor"],
       template: "systems/forbidden-lands/model/character.html",
       width: 620,
-      height: 850,
+      height: 870,
       resizable: false,
       scrollY: [
         ".armors .item-list .items",
