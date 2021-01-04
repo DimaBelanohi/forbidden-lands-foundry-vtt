@@ -5,7 +5,7 @@
   height: 100%;
 }
 
-.forbidden-lands .attributes- {
+.forbidden-lands .attributes-conditions {
     display: grid;
     gap: 8px;
     grid-template-columns: 1fr 1fr;
