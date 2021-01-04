@@ -54,13 +54,6 @@
   color: #a00;
 }
 
-.forbidden-lands .character .critical-injuries {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding-bottom: 8px;
-}
-
 .forbidden-lands .character .critical-injuries .items .critical-injury {
   align-items: center;
 }

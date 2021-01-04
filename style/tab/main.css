@@ -9,7 +9,15 @@
     display: grid;
     gap: 8px;
     grid-template-columns: 1fr 1fr;
-  }
+}
+
+.forbidden-lands .character .critical-injuries {
+    height: 150px;
+    padding: 0 8px 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
 
 .forbidden-lands .attributes {
   align-items: baseline;
