@@ -168,4 +168,13 @@
     gap: 4px 8px;
     grid-template-columns: 1fr auto;
     padding: 0 8px 8px;
-  }
+}
+
+.forbidden-lands .actions h1 {
+    grid-column: 1/-1;
+}
+
+.forbidden-lands .actions .name {
+    font-family: var(--font-special);
+    flex-basis: 50%;
+}
