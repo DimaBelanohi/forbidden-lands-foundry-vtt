@@ -159,3 +159,13 @@
   font-style: italic;
   font-size: 10px;
 }
+
+.forbidden-lands .actions {
+    align-items: baseline;
+    display: grid;
+    flex-basis: calc(50% - 4px);
+    flex-grow: 1;
+    gap: 4px 8px;
+    grid-template-columns: 1fr auto;
+    padding: 0 8px 8px;
+  }
